@@ -1,0 +1,48 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    &__item {
+        position: relative;
+        border-radius: 1.2rem;
+        & span {
+            max-width: 0;
+            height: 0.2rem;
+            position: absolute;
+            right: 1.7rem;
+            left: 1.7rem;
+            top: 4.4rem;
+            background: #3445C7;  
+        }
+        &:not(.menu__item_active) span{
+            animation: squeezeLine 1s;
+        }
+        &_active span{
+            max-width: 2.2rem;
+            animation: squeezeLineActive 1s;
+        }
+        &:not(.menu__item_active):hover span{
+            animation: stretchLine 1s forwards;
+        }
+        &_active:hover span{
+            animation: stretchLineActive 1s forwards;
+        }
+    }
+    &__item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem 1.6rem;
+        color: #000;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}

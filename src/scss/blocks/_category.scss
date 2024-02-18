@@ -1,0 +1,40 @@
+.category {
+    &__inner {
+        padding: 12rem 0 8rem 0;
+    }
+    &__title {
+        display: flex;
+        max-width: 100%;
+        padding: 3.6rem 3.2rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.2rem;
+        background-color: #F9DAEC;
+        box-shadow: 0px 2px 4px 0px rgba(249, 218, 236, 0.50), 0px 6px 16px 0px rgba(0, 0, 0, 0.05);
+        color: #000;
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.6rem; /* 112.5% */
+    }
+    &__product-cards {
+        margin-top: 2rem;
+        display: flex;
+        padding: 5.2rem 5.6rem 3.2rem 5.6rem;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 3.2rem 1.6rem;
+        align-self: stretch;
+        flex-wrap: wrap;
+        border-radius: 1.2rem;
+        align-items: stretch;
+        &_books {
+            background-color: #ABC7FC;
+            box-shadow: 0px 2px 4px 0px #AAC6FA, 0px 12px 32px 0px rgba(0, 0, 0, 0.10);
+        }
+        &_courses {
+            background-color: #80D7C3;
+            box-shadow: 0px 2px 4px 0px #80D7C3, 0px 12px 32px 0px rgba(0, 0, 0, 0.10);
+        }
+    }
+}

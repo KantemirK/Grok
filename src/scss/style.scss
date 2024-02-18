@@ -1,0 +1,23 @@
+@import "../../node_modules/normalize.css/normalize";
+
+@import "base/base";
+@import "base/root";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+@import "base/container";
+@import "base/animations";
+
+@import "blocks/btn";
+@import "blocks/logo";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/promo";
+@import "blocks/categories";
+@import "blocks/card";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/category";
+@import "blocks/product-card";
+
+@import "base/general";

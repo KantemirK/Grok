@@ -1,0 +1,15 @@
+.show {
+	display: flex;
+}
+.hide {
+	display: none;
+}
+
+.open {
+	display: flex;
+	overflow: hidden;
+}
+.close {
+	display: none;
+	overflow: visible;
+}
