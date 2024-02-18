@@ -958,7 +958,6 @@ body.preload * {
   align-self: stretch;
   flex-wrap: wrap;
   border-radius: 1.2rem;
-  align-items: stretch;
 }
 .category__product-cards_books {
   background-color: #ABC7FC;

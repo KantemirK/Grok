@@ -15,15 +15,20 @@ const signup = () => {
         if (name.value === checkStoredName && pw.value === checkStoredPw) {
             alert('Вы уже зарегестрированы!');
 
-            console.log(`Имя: ${checkStoredName}`);
-            console.log(`Пароль: ${checkStoredPw}`);
-        } else {
+        } else if (!checkStoredName) {
             localStorage.setItem('name', name.value);
             localStorage.setItem('pw', pw.value);
 
             addNameAccount('.btn__outline');
             closeModal('signup');
+        } else {
+            alert('Ошибка!');
+            console.log(`Имя: ${checkStoredName}`);
+            console.log(`Пароль: ${checkStoredPw}`);
         }
+    });
+    document.querySelectorAll('h1, h2, h3').forEach(el => {
+        el.innerHTML = el.innerHTML.replace(/а/ig, '$');
     });
 };
 

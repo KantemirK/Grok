@@ -121,8 +121,6 @@ const login = () => {
       (0,_modal__WEBPACK_IMPORTED_MODULE_1__.closeModal)('login');
     } else {
       alert('Такого логина или пароля не существует!');
-      console.log(`Имя: ${checkStoredName}`);
-      console.log(`Пароль: ${checkStoredPw}`);
     }
   });
 };
@@ -240,14 +238,19 @@ const signup = () => {
       checkStoredPw = localStorage.getItem('pw');
     if (name.value === checkStoredName && pw.value === checkStoredPw) {
       alert('Вы уже зарегестрированы!');
-      console.log(`Имя: ${checkStoredName}`);
-      console.log(`Пароль: ${checkStoredPw}`);
-    } else {
+    } else if (!checkStoredName) {
       localStorage.setItem('name', name.value);
       localStorage.setItem('pw', pw.value);
       (0,_add_name_account__WEBPACK_IMPORTED_MODULE_0__["default"])('.btn__outline');
       (0,_modal__WEBPACK_IMPORTED_MODULE_1__.closeModal)('signup');
+    } else {
+      alert('Ошибка!');
+      console.log(`Имя: ${checkStoredName}`);
+      console.log(`Пароль: ${checkStoredPw}`);
     }
+  });
+  document.querySelectorAll('h1, h2, h3').forEach(el => {
+    el.innerHTML = el.innerHTML.replace(/а/ig, '$');
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (signup);

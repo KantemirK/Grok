@@ -17,9 +17,6 @@ const login = () => {
             closeModal('login');
         } else {
             alert('Такого логина или пароля не существует!');
-
-            console.log(`Имя: ${checkStoredName}`);
-            console.log(`Пароль: ${checkStoredPw}`);
         }
     });
 };
