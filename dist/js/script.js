@@ -119,8 +119,12 @@ const login = () => {
     if (name.value === checkStoredName && pw.value === checkStoredPw) {
       (0,_add_name_account__WEBPACK_IMPORTED_MODULE_0__["default"])('.btn__outline');
       (0,_modal__WEBPACK_IMPORTED_MODULE_1__.closeModal)('login');
+      console.log(`Имя: ${checkStoredName}`);
+      console.log(`Пароль: ${checkStoredPw}`);
     } else {
       alert('Такого логина или пароля не существует!');
+      console.log(`Имя: ${checkStoredName}`);
+      console.log(`Пароль: ${checkStoredPw}`);
     }
   });
 };
@@ -238,6 +242,8 @@ const signup = () => {
       checkStoredPw = localStorage.getItem('pw');
     if (name.value === checkStoredName && pw.value === checkStoredPw) {
       alert('Вы уже зарегестрированы!');
+      console.log(`Имя: ${checkStoredName}`);
+      console.log(`Пароль: ${checkStoredPw}`);
     } else if (!checkStoredName) {
       localStorage.setItem('name', name.value);
       localStorage.setItem('pw', pw.value);
@@ -340,6 +346,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_modules_change_status_nav_menu__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_modules_modal__WEBPACK_IMPORTED_MODULE_0__.modal)('.modal', 'login', '[data-modal-trigger="login"]');
   (0,_modules_modal__WEBPACK_IMPORTED_MODULE_0__.modal)('.modal', 'signup', '[data-modal-trigger="signup"]');
+  (0,_modules_modal__WEBPACK_IMPORTED_MODULE_0__.modal)('.modal', 'defects', '[data-modal-trigger="defects"]');
   /* showModalByTime('.modal', 'login', 15000); */
   (0,_modules_signup__WEBPACK_IMPORTED_MODULE_3__["default"])();
   (0,_modules_login__WEBPACK_IMPORTED_MODULE_4__["default"])();

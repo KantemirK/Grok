@@ -1,0 +1,11 @@
+.defects {
+    position: fixed;
+    z-index: 1;
+    right: 2rem;
+    top: 2.9rem;
+    & img {
+        height: 6rem;
+        max-width: 6rem;
+    }
+
+}

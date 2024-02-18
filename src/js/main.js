@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     changeStatusNavMenu();
     modal('.modal', 'login', '[data-modal-trigger="login"]');
     modal('.modal', 'signup', '[data-modal-trigger="signup"]');
+    modal('.modal', 'defects', '[data-modal-trigger="defects"]');
     /* showModalByTime('.modal', 'login', 15000); */
     signup();
     login();

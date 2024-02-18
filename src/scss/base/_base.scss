@@ -50,6 +50,10 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
+	cursor: wait;
+	&:hover {
+		cursor: wait;
+	}
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/

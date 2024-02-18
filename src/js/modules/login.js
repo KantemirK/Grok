@@ -15,8 +15,13 @@ const login = () => {
         if (name.value === checkStoredName && pw.value === checkStoredPw) {
             addNameAccount('.btn__outline');
             closeModal('login');
+
+            console.log(`Имя: ${checkStoredName}`);
+            console.log(`Пароль: ${checkStoredPw}`);
         } else {
             alert('Такого логина или пароля не существует!');
+            console.log(`Имя: ${checkStoredName}`);
+            console.log(`Пароль: ${checkStoredPw}`);
         }
     });
 };
