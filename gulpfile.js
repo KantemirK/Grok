@@ -87,7 +87,7 @@ gulp.task("build", gulp.parallel("copy-html", "copy-assets", "build-sass", "buil
 
 gulp.task("prod", () => {
   del.sync('dist/*');
-  gulp.src("./src/*.html")
+  gulp.src("./src/**/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(dist));
   gulp.src("./src/img/**/*.*")
