@@ -20,7 +20,8 @@
         font-style: normal;
         font-weight: 700;
         line-height: 3.6rem; /* 112.5% */
-        writing-mode:sideways-lr;
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
     }
     &__cards {
         display: flex;
